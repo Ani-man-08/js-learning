@@ -1,3 +1,5 @@
+//++++++++++++++++++ Object Literals ++++++++++++++++++++++++++
+
 const mySum = Symbol("Key1")
 
 const jsUser = {
