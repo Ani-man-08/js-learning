@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html Events</title>
+</head>
+<body style="background-color: #414141;
+color:aliceblue">
+  <h2>Amazing Image</h2>
+  <div>
+    <ul id="images">
+      <li><img width="200px" id="Shibu" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Taka_Shiba.jpg/1280px-Taka_Shiba.jpg" alt="Shibu"></li>
+      <li><img width="200px" id="Neko" src="https://hips.hearstapps.com/hmg-prod/images/white-cat-breeds-kitten-in-grass-67bf648a54a3b.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*" alt="Neko"></li>
+      <li><img width="200px" id="Horse" src="https://countryandstable.co.uk/product_images/uploaded_images/chestnut.jpg" alt="Horse"></li>
+      <li><a style="color:aliceblue" href="https://google.com" id="google">Google</a></li>
+    </ul>
+  </div>
+  <script>
+    // document.getElementById('Neko').onclick = function(){
+    //   alert("neko clicked")
+    // }
+
+    //best approach
+    document.getElementById('Neko').addEventListener('click', function(e){
+            console.log(e)
+    })
+
+  
+    // //eventPropogation
+
+    // // Bubbling --> down => up
+    // document.getElementById('images').addEventListener('click', function(e){
+    //         console.log("clicked inside the ul");
+    // },false)
+    // document.getElementById('Neko').addEventListener('click', function(e){
+    //         console.log("Neko clicked");
+    // },false)
+
+    // // Capturing --> up => down 
+    // document.getElementById('images').addEventListener('click', function(e){
+    //         console.log("clicked inside the ul");
+    // },true)
+    // document.getElementById('Neko').addEventListener('click', function(e){
+    //         console.log("Neko clicked");
+    // },true)
+
+    // //stopPropagation
+    // document.getElementById('Neko').addEventListener('click', function(e){
+    //         e.stopPropagation()
+    // },false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //   e.preventDefault();
+    //   alert("Google clicked")
+    // });
+    
+    
+// remove() pictures
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //   console.log(e.target.parentNode)
+    //   let removeIt = e.target.parentNode
+    //   removeIt.remove();
+    // },false)  
+
+    document.querySelector('#images').addEventListener('click',function(e){
+      console.log(e.target.tagName)
+      if(e.target.tagName === 'IMG'){
+        console.log(e.target.id)
+      let removeIt = e.target.parentNode
+      removeIt.remove();
+    }},false)
+  </script>
+  
+</body>
+</html>
