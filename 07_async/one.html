@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Await</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Technology")
+    // },2000)
+
+    //here we store the fn. in a variable and then give only reference not execute(bcz it is a handler)
+    const sayHi = function(){
+        console.log("Technology")
+    }
+    //setTimeout(sayHi,2000)
+
+//**********************************************/
+
+    //change script
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Aniruddha Mankar"
+    }
+    const changeMe = setTimeout(changeText,3000)
+
+    //here clearTimeout terminate the setTimeout 
+    document.querySelector('#stop').addEventListener('click',function(e){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+    
+
+
+</script>
+</html>

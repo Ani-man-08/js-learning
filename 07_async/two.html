@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;
+color: aliceblue;">
+    <h1>Async in Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Ani",Date.now())
+    // },1000)
+
+    const sayDate = function(set){
+        console.log(set,Date.now())
+    }
+
+    // const intervalId = setInterval(sayDate,1000,"Aniket")
+    // clearInterval(intervalId)
+
+    //********************************************
+    let ani;
+
+    document.querySelector('#start').addEventListener('click',function(){
+       ani = setInterval(sayDate,1000,"Aniruddha")
+    })
+   
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(ani)
+    })
+
+
+</script>
+</html>
