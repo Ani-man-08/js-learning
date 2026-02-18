@@ -8,11 +8,11 @@ class User {
         return this._email.toUpperCase()
     }
     set email(value){
-        this._email = value
+        this._email = value  // bcz constructor also sets the value. we take a different variable _email
     }
 
     get password(){
-        return `${this._password}hitesh`
+        return `${this._password}ani`
     }
 
     set password(value){
@@ -20,5 +20,5 @@ class User {
     }
 }
 
-const hitesh = new User("h@hitesh.ai", "abc")
-console.log(hitesh.email);
+const ani = new User("a@ani.ai", "abc")
+console.log(ani.email);
