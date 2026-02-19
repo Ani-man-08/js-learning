@@ -33,7 +33,7 @@ else if(balance < 900){
     console.log(`balance is less than 900`)
 }
 else{
-    console.log(`balance is equal to 1200`)
+    console.log(`balance is = to 1200`)
 }
 
 //******************************/
