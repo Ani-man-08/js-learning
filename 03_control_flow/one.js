@@ -47,6 +47,6 @@ if(isLoggedIn && debitCard){           // both must be true
     console.log(`allow to buy`)
 }
 
-if(loggedInFromGoogle || loggedInFromEmail){  // atleast one should be true
+if(loggedInFromGoogle || loggedInFromEmail){  // atleast one should be true.
     console.log(`user loggedIn`)
 }
