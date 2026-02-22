@@ -18,7 +18,7 @@ const shoppingCart = [
         price: 20000
     },
     {
-        itemName: "Fridge",
+        itemName: "WashingMAchine",
         price: 10000
     },
 ]
