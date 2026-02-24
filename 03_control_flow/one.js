@@ -3,7 +3,7 @@ const temperature = 41;
 if(temperature < 50){                  // <, >, =>, =<, ==, !=, !==, === (also checks the dataType)
     console.log("executed");
 }
-console.log("Temperature is greater than 50");
+console.log("Temp. is greater than 50");
 
 //**************************************/
 
@@ -11,7 +11,7 @@ if(temperature === 40){
     console.log("less than 50")
 }
 else{
-    console.log("Temperature is greater than 50")
+    console.log("Temp. is greater than 50")
 }
 
 //***************************************/
