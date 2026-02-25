@@ -44,7 +44,7 @@ const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
 if(isLoggedIn && debitCard){           // both must be true
-    console.log(`allow to buy`)
+    console.log(`Allow to buy`)
 }
 
 if(loggedInFromGoogle || loggedInFromEmail){  // atleast one should be true.
