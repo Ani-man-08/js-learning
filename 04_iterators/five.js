@@ -1,5 +1,5 @@
 // forEach loop
-const heros = ["Iron Man","Hulk","Thor","Black Widow"]
+const heros = ["Iron Man","Black panther","Thor","Black Widow"]
 
 // heros.forEach(function (value){      //---> this is a callback fu. that's why it doesnt have name
 //     console.log(value.toUpperCase())
