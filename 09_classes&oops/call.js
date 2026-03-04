@@ -11,5 +11,5 @@ function createUser(username, email, password){
     this.password = password
 }
 
-const chai = new createUser("chai", "chai@fb.com", "123")
+const chai = new createUser("Ani", "ani@fb.com", "123")
 console.log(chai);
